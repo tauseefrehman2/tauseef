@@ -9,14 +9,14 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website complete</title>
+        <title>Tauseef Rehman</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Marlon</a>
+                    <a href="#" class="nav__logo">Tauseef</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -39,16 +39,28 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Tauseef</span><br> Flutter Developer</h1>
 
                     <a href="#" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="home__social-icon"><i class='fab fa-linkedin'></i></a>
+                    <a href="https://github.com/your-profile" target="_blank" class="home__social-icon"><i class='fab fa-github'></i></a>
+                    <a href="https://www.fiverr.com/your-profile" target="_blank" class="home__social-icon">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/12/Fiverr-Logo.png" alt="Fiverr" style="height: 24px;">
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~your-profile" target="_blank" class="home__social-icon">
+                        <img src="https://w7.pngwing.com/pngs/257/806/png-transparent-upwork-freelancer-android-android-text-trademark-rectangle-thumbnail.png" alt="Upwork" style="width: 24px; height: 24px;">
+                    </a>
                 </div>
+                
+                <!-- Add this to the <head> section of your HTML to include Font Awesome -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                
+                <!-- Add this to the <head> section of your HTML to include Font Awesome -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                
 
                 <div class="home__img">
                     <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -69,12 +81,14 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/tauseef.png" alt="">
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                        <h2 class="about__subtitle">I'm Tauseef</h2>
+                        <p class="about__text">
+                            A Software Engineer with over six years of Flutter app development experience(Android & ios). I specialize in Java, Dart, MVVM architecture, Google Maps, Firebase, and APIs to create seamless mobile experiences.<br><br>
+                            I've completed 35+ projects on Fiverr and have 30+ apps on Google Play. I use GitHub/BitBucket, Asana, Jira, and ensure high-quality apps through rigorous testing and detailed documentation.</p>           
                     </div>                                   
                 </div>
             </section>
@@ -82,66 +96,254 @@
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
-
+            
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
+                        <h3 class="skills__subtitle">Professional Skills</h3>
+                        <p class="skills__text">I specialize in developing high-quality mobile applications using Flutter, Dart, Java, and Firebase.</p>
+            
+                        <div class="skills__chips">
+                            <span class="skills__chip"><i class='fab fa-flutter skills__icon'></i> Flutter</span>
+                            <span class="skills__chip"><i class='fab fa-dart skills__icon'></i> Dart</span>
+                            <span class="skills__chip"><i class='fab fa-java skills__icon'></i> Java</span>
+                            <span class="skills__chip"><i class='fas fa-database skills__icon'></i> Firebase</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
+            
+            <!-- Add this to the <head> section of your HTML to include Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            
+            <style>
+            .section {
+                padding: 2rem 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                color: #333;
+            }
+            
+            .skills__container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            
+            .skills__subtitle {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #555;
+                text-align: center;
+            }
+            
+            .skills__text {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                color: #777;
+                text-align: center;
+            }
+            
+            .skills__chips {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .skills__chip {
+                display: inline-flex;
+                align-items: center;
+                background-color: #007bff;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                margin: 0.5rem;
+                font-size: 1rem;
+            }
+            
+            .skills__chip i {
+                margin-right: 0.5rem;
+                font-size: 1.2rem;
+            }
+            
+            .skills__icon {
+                font-size: 1.5rem;
+                margin-right: 0.5rem;
+            }
+            
+            .skills__name {
+                font-size: 1rem;
+                color: #fff;
+            }
+            </style>
+            
+            
+            <!-- Add this to the <head> section of your HTML to include Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            
+            <style>
+            .section {
+                padding: 2rem 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                color: #333;
+            }
+            
+            .skills__container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            
+            .skills__subtitle {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #555;
+                text-align: center;
+            }
+            
+            .skills__text {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                color: #777;
+                text-align: center;
+            }
+            
+            .skills__data {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                justify-content: center;
+            }
+            
+            .skills__names {
+                display: flex;
+                align-items: center;
+            }
+            
+            .skills__icon {
+                font-size: 1.5rem;
+                margin-right: 0.5rem;
+                color: #007bff;
+            }
+            
+            .skills__name {
+                font-size: 1rem;
+                color: #333;
+            }
+            </style>
+            
+            
+            <!-- Add this to the <head> section of your HTML to include Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            
+            <style>
+            .section {
+                padding: 2rem 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                color: #333;
+            }
+            
+            .skills__container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .skills__subtitle {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #555;
+            }
+            
+            .skills__text {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                color: #777;
+            }
+            
+            .skills__data {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+            }
+            
+            .skills__names {
+                display: flex;
+                align-items: center;
+                flex-basis: 20%;
+            }
+            
+            .skills__icon {
+                font-size: 1.5rem;
+                margin-right: 0.5rem;
+                color: #007bff;
+            }
+            
+            .skills__name {
+                font-size: 1rem;
+                color: #333;
+            }
+            
+            .skills__bar {
+                flex-basis: 60%;
+                height: 0.5rem;
+                background: #e0e0e0;
+                border-radius: 0.25rem;
+                margin-right: 1rem;
+                position: relative;
+            }
+            
+            .skills__percentage {
+                height: 100%;
+                background: #007bff;
+                border-radius: 0.25rem;
+            }
+            
+            .skills__percentage-text {
+                flex-basis: 20%;
+                font-size: 1rem;
+                color: #555;
+            }
+            
+            .skills__img {
+                max-width: 100%;
+                border-radius: 0.5rem;
+            }
+            
+            @media (max-width: 768px) {
+                .skills__container {
+                    flex-direction: column;
+                }
+                .skills__data {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .skills__names, .skills__percentage-text {
+                    flex-basis: auto;
+                    margin-bottom: 0.5rem;
+                }
+                .skills__bar {
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+            </style>
+            
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
@@ -186,13 +388,13 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Marlon</p>
+            <p class="footer__title">Tauseef rehman</p>
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+            <p class="footer__copy">&#169; tauseefrehman. All rigths reserved</p>
         </footer>
 
 
