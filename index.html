@@ -215,7 +215,7 @@
     .badge-green { background: #ECFDF5; color: #059669; border-color: #A7F3D0; }
 
     /* ── SECTIONS ── */
-    .section { padding: 70px 5%; max-width: 1100px; margin: 0 auto; }
+    .section { padding: 70px 1%; max-width: 1100px; margin: 0 auto; }
     .section-alt { background: var(--bg2); }
     .section-alt .section { background: transparent; }
     .section-label { font-size: 0.8rem; font-weight: 600; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem; }
@@ -440,6 +440,38 @@
       .footer-top { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; text-align: center; }
     }
+
+  
+  .project-body p.project-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+
+    /* Clamp to 5 lines by default */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .project-body p.project-desc.expanded {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .read-more-btn:hover { text-decoration: underline; }
+
   </style>
 </head>
 
@@ -642,7 +674,8 @@
         <div class="project-body">
           <p class="project-type">E-Commerce Flutter App</p>
           <h4>Multi-Vendor E-commerce Flutter App</h4>
-          <p>A scalable e-commerce mobile application built using Flutter and Laravel API backend. This multi-vendor marketplace allows multiple sellers to list products, manage inventory, and process orders from a single platform. Customers can browse products, add to cart, apply coupon codes, and complete purchases securely via Stripe payment integration. The app includes real-time product inventory management, push notifications for order updates using Firebase Cloud Messaging, an admin dashboard for managing vendors and commissions, and a comprehensive review and rating system. Built with GetX state management for a smooth, responsive user experience across both iOS and Android devices.</p>
+          <p class="project-desc">A scalable e-commerce mobile application built using Flutter and Laravel API backend. This multi-vendor marketplace allows multiple sellers to list products, manage inventory, and process orders from a single platform. Customers can browse products, add to cart, apply coupon codes, and complete purchases securely via Stripe payment integration. The app includes real-time product inventory management, push notifications for order updates using Firebase Cloud Messaging, an admin dashboard for managing vendors and commissions, and a comprehensive review and rating system. Built with GetX state management for a smooth, responsive user experience across both iOS and Android devices.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ↓</button>
           <ul class="feature-list">
             <li>Stripe payment gateway integration</li>
             <li>Real-time product inventory sync</li>
@@ -659,7 +692,8 @@
         <div class="project-body">
           <p class="project-type">Food Delivery Flutter App</p>
           <h4>QuickBite — Food Delivery Flutter App</h4>
-          <p>A complete three-app Flutter system for food delivery: separate apps for customers, restaurant owners, and delivery riders. The customer app features restaurant browsing, menu selection, real-time GPS order tracking via Google Maps integration, and secure online payments. The restaurant app provides order management, menu editing, and revenue analytics. The rider app includes route optimization, delivery status updates, and earnings tracking. All three apps communicate through a Laravel REST API backend with WebSocket connections for real-time updates. Push notifications keep all parties informed at every stage of the delivery process.</p>
+          <p class="project-desc">A complete three-app Flutter system for food delivery: separate apps for customers, restaurant owners, and delivery riders. The customer app features restaurant browsing, menu selection, real-time GPS order tracking via Google Maps integration, and secure online payments. The restaurant app provides order management, menu editing, and revenue analytics. The rider app includes route optimization, delivery status updates, and earnings tracking. All three apps communicate through a Laravel REST API backend with WebSocket connections for real-time updates. Push notifications keep all parties informed at every stage of the delivery process.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ↓</button>
           <ul class="feature-list">
             <li>Real-time GPS tracking with Google Maps</li>
             <li>WebSocket live order status updates</li>
@@ -676,7 +710,8 @@
         <div class="project-body">
           <p class="project-type">EdTech Flutter App</p>
           <h4>EduSpace — Learning Management Flutter App</h4>
-          <p>A full-featured Flutter learning management system (LMS) for online education. Students can browse and enrol in video courses, take interactive quizzes, track their learning progress, and download completion certificates. Instructors can create courses, upload video lectures, set quiz questions, and view student engagement analytics. The app features offline video caching so students can learn without an internet connection. Built with BLoC state management and a Laravel backend handling user authentication, course content delivery, progress tracking, and certificate generation via PDF export.</p>
+          <p class="project-desc">A full-featured Flutter learning management system (LMS) for online education. Students can browse and enrol in video courses, take interactive quizzes, track their learning progress, and download completion certificates. Instructors can create courses, upload video lectures, set quiz questions, and view student engagement analytics. The app features offline video caching so students can learn without an internet connection. Built with BLoC state management and a Laravel backend handling user authentication, course content delivery, progress tracking, and certificate generation via PDF export.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ↓</button>
           <ul class="feature-list">
             <li>Video courses with offline caching</li>
             <li>Interactive quizzes with scoring</li>
@@ -693,7 +728,8 @@
         <div class="project-body">
           <p class="project-type">Social Flutter App</p>
           <h4>ConnectMe — Real-Time Chat Flutter App</h4>
-          <p>A real-time messaging and social networking Flutter app built with Firebase Firestore as the backend. Users can send text messages, share images, videos, and documents in one-on-one and group conversations. The app features story/status functionality similar to WhatsApp, online/offline presence indicators, typing indicators, message read receipts, and push notifications for new messages. User profiles support custom avatars and bio updates. Built with GetX state management for instant, reactive UI updates across all chat screens.</p>
+          <p class="project-desc">A real-time messaging and social networking Flutter app built with Firebase Firestore as the backend. Users can send text messages, share images, videos, and documents in one-on-one and group conversations. The app features story/status functionality similar to WhatsApp, online/offline presence indicators, typing indicators, message read receipts, and push notifications for new messages. User profiles support custom avatars and bio updates. Built with GetX state management for instant, reactive UI updates across all chat screens.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ↓</button>
           <ul class="feature-list">
             <li>Real-time one-on-one and group messaging</li>
             <li>Media sharing: images, videos, documents</li>
@@ -710,7 +746,8 @@
         <div class="project-body">
           <p class="project-type">Real Estate Flutter App</p>
           <h4>PropFinder — Property Listing Flutter App</h4>
-          <p>A Flutter property listing and real estate app with advanced search and filtering capabilities. Users can browse properties for sale or rent, filter by price range, location, property type, number of bedrooms, and amenities. Each listing features image galleries, detailed descriptions, floor plans, and an interactive Google Maps view showing exact location and nearby facilities. Buyers can save favourite properties, schedule viewing appointments, and contact agents through in-app messaging. Built with Riverpod state management and a REST API backend handling property data, user authentication, and agent-buyer communication.</p>
+          <p class="project-desc">A Flutter property listing and real estate app with advanced search and filtering capabilities. Users can browse properties for sale or rent, filter by price range, location, property type, number of bedrooms, and amenities. Each listing features image galleries, detailed descriptions, floor plans, and an interactive Google Maps view showing exact location and nearby facilities. Buyers can save favourite properties, schedule viewing appointments, and contact agents through in-app messaging. Built with Riverpod state management and a REST API backend handling property data, user authentication, and agent-buyer communication.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ↓</button>
           <ul class="feature-list">
             <li>Advanced search with multiple filters</li>
             <li>Google Maps integration with nearby places</li>
@@ -727,7 +764,8 @@
         <div class="project-body">
           <p class="project-type">Health &amp; Fitness Flutter App</p>
           <h4>FitTrack Pro — Workout &amp; Nutrition Flutter App</h4>
-          <p>A comprehensive Flutter health and fitness app combining workout tracking with nutrition logging. Users can choose from pre-built workout programs or create custom routines, log sets, reps, and weights for each exercise, and track their progress over time through custom animated charts built with the fl_chart package. The nutrition module allows meal logging with calorie and macro tracking. All data syncs across devices via Firebase, so users never lose their fitness history. The app features goal setting, streak tracking, achievement badges, and weekly progress reports delivered via push notifications.</p>
+          <p class="project-desc">A comprehensive Flutter health and fitness app combining workout tracking with nutrition logging. Users can choose from pre-built workout programs or create custom routines, log sets, reps, and weights for each exercise, and track their progress over time through custom animated charts built with the fl_chart package. The nutrition module allows meal logging with calorie and macro tracking. All data syncs across devices via Firebase, so users never lose their fitness history. The app features goal setting, streak tracking, achievement badges, and weekly progress reports delivered via push notifications.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ↓</button>
           <ul class="feature-list">
             <li>Custom workout programs and exercise logging</li>
             <li>Nutrition tracking with calorie &amp; macro breakdowns</li>
@@ -742,6 +780,8 @@
     </div>
   </div>
 </section>
+
+
 
 <div class="divider"></div>
 
@@ -856,7 +896,6 @@
 <!-- ══════════════════════════════════════════════════════════════
      FIX #10: REVIEWS — Expanded + More Reviews + Trust Signals
      ══════════════════════════════════════════════════════════════ -->
-     
 <section class="section-alt" id="reviews" aria-label="Client reviews and testimonials for Flutter developer Tauseef Rehman">
   <div class="section">
     <p class="section-label">Client Love</p>
@@ -1418,6 +1457,14 @@
     btn.disabled = false;
     btn.textContent = 'Send Message 🚀';
   });
+</script>
+
+<script>
+  function toggleDesc(btn) {
+    const p = btn.previousElementSibling;
+    const expanded = p.classList.toggle('expanded');
+    btn.textContent = expanded ? 'Read less ↑' : 'Read more ↓';
+  }
 </script>
 
 </body>
