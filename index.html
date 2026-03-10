@@ -98,13 +98,21 @@
   }
   </script>
 
-  <!-- Aggregate Review Schema -->
+  <!-- Aggregate Review Schema — FIX: Changed from Person to ProfessionalService (valid type for Review rich results) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Tauseef Rehman - Flutter App Development",
-    "url": "https://tauseefrehman2.github.io/tauseef/",
+    "@type": "ProfessionalService",
+    "name": "Tauseef Rehman — Flutter App Development",
+    "url": "https://tauseefrehman2.github.io/",
+    "image": "https://tauseefrehman2.github.io/images/tauseef-rehman-flutter-developer.jpg",
+    "description": "Professional Flutter app development services for iOS, Android, Web and Desktop with Laravel backend integration.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Faisalabad",
+      "addressCountry": "PK"
+    },
+    "priceRange": "$$",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -114,36 +122,42 @@
     "review": [
       {
         "@type": "Review",
+        "itemReviewed": { "@type": "ProfessionalService", "name": "Tauseef Rehman — Flutter App Development" },
         "author": { "@type": "Person", "name": "James Mitchell" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "Tauseef delivered an outstanding Flutter app for both iOS and Android. The UI is pixel-perfect and the API integration was flawless. Will definitely hire again!"
       },
       {
         "@type": "Review",
+        "itemReviewed": { "@type": "ProfessionalService", "name": "Tauseef Rehman — Flutter App Development" },
         "author": { "@type": "Person", "name": "Sarah Andersson" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "Exceptional Flutter developer! Built our food delivery app from scratch with real-time tracking and beautiful UI. Highly recommended for any Flutter project."
       },
       {
         "@type": "Review",
+        "itemReviewed": { "@type": "ProfessionalService", "name": "Tauseef Rehman — Flutter App Development" },
         "author": { "@type": "Person", "name": "David Chen" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "Tauseef is one of the best Flutter developers I have worked with. He built our entire EdTech platform from scratch — both the Flutter app and the Laravel API. Communication was excellent throughout."
       },
       {
         "@type": "Review",
+        "itemReviewed": { "@type": "ProfessionalService", "name": "Tauseef Rehman — Flutter App Development" },
         "author": { "@type": "Person", "name": "Emily Roberts" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "We hired Tauseef to migrate our React Native app to Flutter. He delivered ahead of schedule and the new Flutter app is noticeably faster. Great experience overall."
       },
       {
         "@type": "Review",
+        "itemReviewed": { "@type": "ProfessionalService", "name": "Tauseef Rehman — Flutter App Development" },
         "author": { "@type": "Person", "name": "Mark Thompson" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "Tauseef built a real estate app for our startup with map integration and in-app chat. He handled everything from UI to backend. Very professional and reliable."
       },
       {
         "@type": "Review",
+        "itemReviewed": { "@type": "ProfessionalService", "name": "Tauseef Rehman — Flutter App Development" },
         "author": { "@type": "Person", "name": "Lisa Wang" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "Hired Tauseef for a health and fitness Flutter app. He nailed the custom chart animations and Firebase sync. Clean code, clear communication, and fast delivery."
@@ -1957,22 +1971,13 @@
       </div>
     </div>
 
-    <!-- Person wrapper gives all Review items a valid parent -->
-    <div itemscope itemtype="https://schema.org/Person">
-      <meta itemprop="name" content="Tauseef Rehman" />
-      <meta itemprop="jobTitle" content="Flutter App Developer" />
-      <meta itemprop="url" content="https://tauseefrehman2.github.io" />
-
-      <div class="reviews-grid">
+    <!-- FIX: Removed Person microdata wrapper — JSON-LD is now the single source of review structured data -->
+    <div class="reviews-grid">
 
         <!-- Review 1 -->
-        <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <article class="review-card">
           <div class="stars">★★★★★</div>
-          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
-          </div>
-          <p class="review-text" itemprop="reviewBody">
+          <p class="review-text">
             Tauseef delivered an outstanding Flutter app for both iOS and Android. The UI is pixel-perfect and the API
             integration was flawless. He understood our requirements quickly, communicated progress daily, and
             delivered before the deadline. The app hasn't had a single crash since launch. Will definitely hire again
@@ -1982,8 +1987,8 @@
             <div class="reviewer-left">
               <div class="reviewer-avatar">JM</div>
               <div>
-                <div class="reviewer-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                  <span itemprop="name">James Mitchell</span>
+                <div class="reviewer-name">
+                  <span>James Mitchell</span>
                 </div>
                 <div class="reviewer-info">Startup Founder · United States</div>
               </div>
@@ -1993,13 +1998,9 @@
         </article>
 
         <!-- Review 2 -->
-        <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <article class="review-card">
           <div class="stars">★★★★★</div>
-          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
-          </div>
-          <p class="review-text" itemprop="reviewBody">
+          <p class="review-text">
             Exceptional Flutter developer! Built our food delivery app from scratch with real-time tracking and
             beautiful UI. The three-app system (customer, restaurant, rider) works perfectly together. Tauseef handled
             both the Flutter frontend and the Laravel API backend. The app has been running smoothly for 6 months with
@@ -2009,8 +2010,8 @@
             <div class="reviewer-left">
               <div class="reviewer-avatar">SA</div>
               <div>
-                <div class="reviewer-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                  <span itemprop="name">Sarah Andersson</span>
+                <div class="reviewer-name">
+                  <span>Sarah Andersson</span>
                 </div>
                 <div class="reviewer-info">Product Manager · United Kingdom</div>
               </div>
@@ -2020,13 +2021,9 @@
         </article>
 
         <!-- Review 3 -->
-        <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <article class="review-card">
           <div class="stars">★★★★★</div>
-          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
-          </div>
-          <p class="review-text" itemprop="reviewBody">
+          <p class="review-text">
             Tauseef is one of the best Flutter developers I have worked with. He built our entire EdTech platform from
             scratch — both the Flutter app and the Laravel API. Students love the offline video feature, and our
             course completion rate jumped to 85%. Communication was excellent throughout, with daily standups despite
@@ -2036,8 +2033,8 @@
             <div class="reviewer-left">
               <div class="reviewer-avatar">DC</div>
               <div>
-                <div class="reviewer-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                  <span itemprop="name">David Chen</span>
+                <div class="reviewer-name">
+                  <span>David Chen</span>
                 </div>
                 <div class="reviewer-info">CEO, EdTech Startup · Canada</div>
               </div>
@@ -2047,13 +2044,9 @@
         </article>
 
         <!-- Review 4 -->
-        <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <article class="review-card">
           <div class="stars">★★★★★</div>
-          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
-          </div>
-          <p class="review-text" itemprop="reviewBody">
+          <p class="review-text">
             We hired Tauseef to migrate our React Native app to Flutter. He delivered ahead of schedule and the new
             Flutter app is noticeably faster — app launch time dropped by 40%. He also restructured the backend API
             for better performance. Great experience overall, and we've continued working with him for feature updates.
@@ -2062,8 +2055,8 @@
             <div class="reviewer-left">
               <div class="reviewer-avatar">ER</div>
               <div>
-                <div class="reviewer-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                  <span itemprop="name">Emily Roberts</span>
+                <div class="reviewer-name">
+                  <span>Emily Roberts</span>
                 </div>
                 <div class="reviewer-info">Technical Lead · Australia</div>
               </div>
@@ -2073,13 +2066,9 @@
         </article>
 
         <!-- Review 5 -->
-        <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <article class="review-card">
           <div class="stars">★★★★★</div>
-          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
-          </div>
-          <p class="review-text" itemprop="reviewBody">
+          <p class="review-text">
             Tauseef built a real estate app for our startup with Google Maps integration and in-app chat between
             buyers and agents. He handled everything from the Flutter UI to the backend. The search filters and map
             view work flawlessly. Very professional, reliable, and easy to work with.
@@ -2088,8 +2077,8 @@
             <div class="reviewer-left">
               <div class="reviewer-avatar">MT</div>
               <div>
-                <div class="reviewer-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                  <span itemprop="name">Mark Thompson</span>
+                <div class="reviewer-name">
+                  <span>Mark Thompson</span>
                 </div>
                 <div class="reviewer-info">Co-Founder · United States</div>
               </div>
@@ -2099,13 +2088,9 @@
         </article>
 
         <!-- Review 6 -->
-        <article class="review-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <article class="review-card">
           <div class="stars">★★★★★</div>
-          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
-          </div>
-          <p class="review-text" itemprop="reviewBody">
+          <p class="review-text">
             Hired Tauseef for a health and fitness Flutter app. He nailed the custom chart animations and Firebase
             sync perfectly. The app feels native on both iOS and Android. Clean code, clear communication, and fast
             delivery. Already planning our next project together.
@@ -2114,8 +2099,8 @@
             <div class="reviewer-left">
               <div class="reviewer-avatar">LW</div>
               <div>
-                <div class="reviewer-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                  <span itemprop="name">Lisa Wang</span>
+                <div class="reviewer-name">
+                  <span>Lisa Wang</span>
                 </div>
                 <div class="reviewer-info">Fitness Brand Owner · Singapore</div>
               </div>
@@ -2125,7 +2110,6 @@
         </article>
 
       </div>
-    </div><!-- end Person wrapper -->
 
   </div>
 </section>
