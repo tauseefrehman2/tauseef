@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://tauseefrehman2.github.io/tauseef/sitemap.xml
+
+Sitemap: https://tauseefrehman2.github.io/tauseefgithubportfolio/sitemap.xml
